@@ -87,6 +87,19 @@ file(DOWNLOAD ${SHEENBIDI_DOWNLOAD_URL} "${SHEENBIDI_DOWNLOAD_DIR}/sheenbidi.zip
 extract_zip("${SHEENBIDI_DOWNLOAD_DIR}/sheenbidi.zip" "${SHEENBIDI_SOURCE_DIR}" "${SHEENBIDI_CPP_TARGET_DIR}")
 
 
+# libpng
+set(LIBPNG_DOWNLOAD_URL "https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.zip")
+set(LIBPNG_DOWNLOAD_DIR "${CMAKE_BINARY_DIR}/libpng-src-download")
+set(LIBPNG_SOURCE_DIR "${RIVE_CPP_SOURCE_DIR}/libpng")
+set(LIBPNG_CPP_TARGET_DIR "zip")
+
+# zlib
+set(ZLIB_DOWNLOAD_URL "https://github.com/madler/zlib/archive/refs/tags/v1.3.zip")
+set(ZLIB_DOWNLOAD_DIR "${CMAKE_BINARY_DIR}/zlib-src-download")
+set(ZLIB_SOURCE_DIR "${RIVE_CPP_SOURCE_DIR}/zlib")
+set(ZLIB_CPP_TARGET_DIR "zip")
+
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
